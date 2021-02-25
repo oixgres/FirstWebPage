@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title>Hola Crayola</title>
+    <title>Hola Crayola</title> <!-- Titulo de la pestaña--->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--- Hacemos uso de la libreria bootstrap -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-      <h1>Hola juapo</h1>
-      <p>Prueba radical numero 1</p>
+    <!-- Navegador de la pagina -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">T.E.S.</a>
+
+      <!-- Lista de elementos en la barra del navegador  -->
+      <!-- ml-auto los items van de derecha a izquierda, con mr-auto es al reves-->
+      <ul class="nav">
+        <li class="nav-item active">
+          <a class="nav-link"href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Portada de la pagina -->
+    <header>
+      <div class="coverFont d-flex justify-content-center align-items-center flex-column">
+        <h1>The Engineer Store</h1>
+        <p>Where Enginners are Enginners</p>
+        <button type="button" name="button1" class="btn btn-outline-light">Osiosi</button>
+
+      </div>
+    </header>
+
+    <h1> Hola juapo</h1>
+    <p> Prueba radical numero 1</p>
+
+    <div class="alert alert-dark" role="alert">Demasiado Radical </div>
+
   </body>
+
 </html>

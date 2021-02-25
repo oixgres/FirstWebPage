@@ -1,0 +1,10 @@
+
+.coverFont{
+  height: 400px;
+  background-image: url("Images/prueba3.png");
+  background-size:cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+  color: white;
+}
