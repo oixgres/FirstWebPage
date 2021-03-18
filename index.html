@@ -3,6 +3,7 @@
 Sitios utilizados
 - Video Guia: https://www.youtube.com/watch?v=TC8bT7zTdoE&ab_channel=codigofacilito
 - Recursos Visuales: Bootstrap
+- Imagenes svg:
 -->
 <html lang="en" dir="ltr">
 
@@ -19,57 +20,62 @@ Sitios utilizados
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="programs/css/style.css">
   </head>
 
   <body class="pageSettings">
     <!-- Navegador de la pagina -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">T.E.S.</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">T.E.S.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Lista de elementos en la barra del navegador  -->
-      <!-- ml-auto los items van de derecha a izquierda, con mr-auto es al reves-->
-      <div class="collapse navbar-collapse" id="colNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link"href="#">Home</a>
-          </li>
+        <!-- Lista de elementos en la barra del navegador  -->
+        <!-- ml-auto los items van de derecha a izquierda, con mr-auto es al reves-->
+        <div class="collapse navbar-collapse" id="colNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link"href="index.html">Home</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Products</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <li class="nav-item">
+              <a class="nav-link" href="programs/html/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <!-- Lista de elementos en la barra del navegador  -->
 
     <!-- Portada de la pagina -->
-    <header>
+
       <div class="coverFont d-flex justify-content-center align-items-center flex-column">
         <h1>The Engineer Store</h1>
         <p>Where Engineers are Engineers</p>
-        <button type="button" name="button1" class="btn btn-secondary">Osiosi</button>
+        <button
+                type="button"
+                name="button1"
+                class="btn btn-secondary">Conocenos
+        </button>
       </div>
     </header>
     <!-- Portada de la pagina -->
 
     <!--- Cartas de la pagina -->
     <section>
-      <div class="card-deck ml-5 mr-5 row">
+      <div class="card-deck ml-5 mr-5 row container-flow">
         <div class="card cardSettings" style="width: 30rem;">
           <!--
-          <img title="G.O.H Participants" src="C:\Users\Sergio\Documents\GitHub\FirstWebPage\Images\prueba2.png" class="imageCardSettings card-img-top" alt="...">
+          <img title="G.O.H Participants" src="C:/Users/Sergio/Documents/GitHub/FirstWebPage/images/prueba2.png" class="imageCardSettings card-img-top" alt="...">
           -->
           <div  title="G.O.H Participants"
                 class="smallCover"
-                style="background-image:url(Images/prueba2.png);">
+                style="background-image:url(images/prueba2.png);">
           </div>
           <div class="card-body">
             <h5 class="card-title">The God of High School Participants</h5>
@@ -79,14 +85,9 @@ Sitios utilizados
         </div>
 
         <div class="card cardSettings" style="width: 30rem;">
-          <!--
-          <img title="Jin Mori, Yu Mira, Han Daewi and others"
-                src="C:\Users\Sergio\Documents\GitHub\FirstWebPage\Images\prueba.jpg"
-                class="imageCardSettings card-img-top" alt="..."/>
-              -->
           <div  title="Jin Mori, Yu Mira and Han Daewi"
                 class="smallCover"
-                style="background-image:url(Images/prueba.jpg);">
+                style="background-image:url(images/prueba.jpg);">
           </div>
           <div class="card-body">
             <h5 class="card-title">The Protagonists</h5>
@@ -98,7 +99,7 @@ Sitios utilizados
         <div class="card cardSettings" style="width: 30rem;">
           <div  title="Jung Mori"
                 class="smallCover"
-                style="background-image:url(Images/prueba4.png);">
+                style="background-image:url(images/prueba4.png);">
           </div>
           <div class="card-body">
             <h5 class="card-title">The Protagonist</h5>
@@ -108,33 +109,10 @@ Sitios utilizados
         </div>
 
         <div class="card cardSettings" style="width: 30rem;">
-          <div  title="Jung Mori"
-                class="smallCover backgroundBottom"
-                style="background-image:url(Images/prueba4.png);">
+          <div  title="Sang Mandeok"
+                class="smallCover"
+                style="background-image:url(images/prueba5.png);">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">The Protagonist</h5>
-            <p class="card-text">Meet Jin Mori, Yu Mira and Han Daewi</p>
-            <a href="#" class="btn btn-primary">GO</a>
-          </div>
-        </div>
-
-        <div class="card cardSettings" style="width: 30rem;">
-          <div  title="Jung Mori"
-                class="smallCover backgroundBottom"
-                style="background-image:url(Images/prueba4.png);">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">The Protagonist</h5>
-            <p class="card-text">Meet Jin Mori, Yu Mira and Han Daewi</p>
-            <a href="#" class="btn btn-primary">GO</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-deck ml-5 mr-5">
-        <div class="card cardSettings" style="width: 30rem;">
-          <img title="Sang Mandeok" src="C:\Users\Sergio\Documents\GitHub\FirstWebPage\Images\prueba5.png" class="imageCardSettings card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Character of the Day!</h5>
             <p class="card-text">Sang Mandeok "The Profet"</p>
@@ -147,11 +125,17 @@ Sitios utilizados
 
     <!-- Formulario -->
     <section>
-      <div class="ml-5 mr-5 mt-5 mb-5">
-        <img src="svg/mail2.svg" alt="" style="width: 100%; height: auto;">
-        <form class="" action="" method="">
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+          <img class=" mr-5 mb-5" src="svg/mail2.svg" style="width:40%; height: auto;">
+          <div class="col-12 col-sm-6">
+            <h1 class="mt-5">Stay in contact with us!</h1>
+            <p>Register your mail in order to receive notifications.</p>
+          </div>
+        </div>
+        <form>
           <div class="form-group">
-            <label for="email">Correo Electronico</label>
+            <label for="email">E-Mail</label>
             <input  type="email"
                     id="email"
                     class="form-control"
@@ -161,9 +145,84 @@ Sitios utilizados
           </div>
           <button type="submit" name="button" class="btn btn-dark">Send</button>
         </form>
-    </div>
+      </div>
     </section>
     <!-- Formulario -->
+
+    <!-- Tiras de productos -->
+    <section>
+      <div class="container mt-5 mb-5">
+        <!-- A fuerzas se ocupan 2 divs consecutivos para tiras de productos-->
+        <div class="justify-content-center product-stripe">
+          <div class="stripe-container">
+            <!-- Utilizamos tarjetas-->
+            <div class="card">
+              <div  title="G.O.H Participants"
+                    class="smallCover"
+                    style="background-image:url(images/prueba2.png);">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The God of High School Participants</h5>
+                <p><span class="badge badge-pill badge-dark pull-right">$100usd</span></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div  title="G.O.H Participants"
+                    class="smallCover"
+                    style="background-image:url(images/prueba2.png);">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The God of High School Participants</h5>
+                <p><span class="badge badge-pill badge-dark pull-right">$100usd</span></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div  title="G.O.H Participants"
+                    class="smallCover"
+                    style="background-image:url(images/prueba2.png);">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The God of High School Participants</h5>
+                <p><span class="badge badge-pill badge-dark pull-right">$100usd</span></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div  title="G.O.H Participants"
+                    class="smallCover"
+                    style="background-image:url(images/prueba2.png);">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The God of High School Participants</h5>
+                <p><span class="badge badge-pill badge-dark pull-right">$100usd</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tiras de productos -->
+
+    <!-- Mapa -->
+    <section>
+      <div class="container mt-5 mb-5" id="map">
+        <h1>Visitanos</h1>
+        <p>Estamos ubicados en la tierra magica de Oz</p>
+        <div class="adjustable-iframe">
+          <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6727.428370214615!2d-116.96489627437103!3d32.53377971941167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d947c091d07945%3A0x65c5734b77863451!2sUABC%2C%20Tijuana%2C%20Baja%20California!5e0!3m2!1sen!2smx!4v1614804976663!5m2!1sen!2smx"
+                  width="auto"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Mapa -->
 
     <h1> Hola juapo</h1>
     <p> Prueba radical numero 1</p>
