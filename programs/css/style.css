@@ -33,21 +33,11 @@ p{
   background-position: center;
 }
 
-.backgroundBottom{
-  background-position: bottom;
-}
-
 .cardSettings{
   min-width: 20rem;
   max-width: 30rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0,0,0,0.6);
   margin-top: 3rem;
-}
-
-.imageCardSettings{
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
 }
 
 .card-title{
