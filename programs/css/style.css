@@ -64,7 +64,7 @@ p{
   padding-bottom: 1rem;
 }
 
-.stripe-container{
+.stripe-container, .slider-container{
   display: flex;
 }
 
@@ -87,10 +87,60 @@ p{
   height: 100%;
 }
 
+.slider{
+  overflow-x: hidden;
+
+}
+
+.slider-container{
+  transform: translateX(0);
+  animation: slider 10s infinite;
+
+}
+
 .image-container{
   width: 100%;
   padding-top: 56.25%;
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
+}
+
+.avatar{
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem;
+}
+
+/* Animaciones en CSS*/
+@keyframes slider {
+  0%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-100%);
+  }
+  45%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-200%);
+  }
+  70%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-300%);
+  }
+  95%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
